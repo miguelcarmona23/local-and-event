@@ -13,4 +13,12 @@ function addItem(e) {
     this.reset();
 }
 
+function populateList(plates = [], platesList) {
+    plates.map((plate, i) => {
+        return `
+        `;
+    });
+}
+
+
 addItems.addEventListener('submit', addItem);
