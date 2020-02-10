@@ -10,6 +10,7 @@ function addItem(e) {
         done: false
     };
     items.push(item);
+    populateList(items, itemsList);
     this.reset();
 }
 
@@ -20,7 +21,7 @@ function populateList(plates = [], platesList) {
         <label for="">${plate.text}</label>
         </li>
         `;
-    });
+    }).join('');
 }
 
 
