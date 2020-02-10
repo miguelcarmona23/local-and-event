@@ -6,9 +6,10 @@ function addItem(e) {
     e.preventDefault();
     const text = (this.querySelector('[name=item]')).value;
     const item = {
-        text: 'Item Name',
+        text,
         done: false
-    }
+    };
+    console.log(item);
 }
 
 addItems.addEventListener('submit', addItem);
