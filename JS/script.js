@@ -3,7 +3,7 @@ const itemsList = document.querySelector('.plates');
 const items = [];
 
 function addItem(e) {
-    console.log('Hello');
+    e.preventDefault();
 }
 
 addItems.addEventListener('submit', addItem);
