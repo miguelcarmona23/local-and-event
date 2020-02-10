@@ -28,9 +28,10 @@ function populateList(plates = [], platesList) {
 }
 
 function toggleDone(e) {
-
+    if (e.target.matches('input')) return;
+    console.log(e.target);
 }
 
 addItems.addEventListener('submit', addItem);
-
+itemsList.addEventListener('click', toggleDone);
 populateList(items, itemsList)
