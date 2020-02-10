@@ -14,7 +14,7 @@ function addItem(e) {
 }
 
 function populateList(plates = [], platesList) {
-    plates.map((plate, i) => {
+    platesList.innerHTML = plates.map((plate, i) => {
         return `
         `;
     });
