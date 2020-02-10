@@ -4,7 +4,7 @@ const items = [];
 
 function addItem(e) {
     e.preventDefault();
-    const text = this.querySelector('[name=item]')
+    const text = (this.querySelector('[name=item]')).value;
     const item = {
         text: 'Item Name',
         done: false
